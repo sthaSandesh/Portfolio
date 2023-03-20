@@ -33,7 +33,7 @@ export function Navbar() {
           })}
         </div>
         <div className="flex space-x-3 items-center">
-          <Link href="/github" target="_blank">
+          <Link href="https://github.com/sthaSandesh" target="_blank">
             <SiGithub className="h-6 w-6 cursor-pointer text-light hover:text-gray transition duration-200 ease-in" />
           </Link>
           <Link href="/discord" target="_blank">

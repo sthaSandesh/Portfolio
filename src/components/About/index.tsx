@@ -11,7 +11,7 @@ export function About() {
         <div className="lg:max-w-[50%] flex flex-col space-y-2 items-center justify-center">
           <h1 className="text-center text-white font-semibold text-4xl">About Me</h1>
           <p className="text-white text-center text-base md:text-lg lg:text-xl">{websiteDescription}</p>
-          <Button variant="info" rounded link="/github" newtab>
+          <Button variant="info" rounded link="https://github.com/sthaSandesh" newtab>
             <span className="flex flex-row space-x-2 items-center">
               Check out my GitHub <HiExternalLink className="h-5 w-5" />
             </span>
