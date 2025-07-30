@@ -5,6 +5,7 @@ import { FiFileText } from 'react-icons/fi';
 import { ProgrammerSvg } from '../Art/ProgrammerSvg';
 import { Button } from '../Button';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -38,9 +39,11 @@ export function Hero() {
           </p>
         </div>
         <div className="flex space-x-3 mt-4 lg:mt-10 w-full">
-          <Button variant="primary" link="/contact">
+          <Link href="/contact" >
+          <button  className='bg-red hover:bg-darkRed text-white p-4  font-bold rounded-md ' >
             Let{"'"}s have a talk
-          </Button>
+          </button>
+          </Link>
           <Button variant="secondary" link="/resume">
             <span className="flex items-center">
               <FiFileText className="mr-1 h-5 w-5" /> My Resume
