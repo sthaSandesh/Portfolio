@@ -12,7 +12,11 @@ const font = Manrope({
 export const metadata: Metadata = {
   title: config.fullName,
   description: config.websiteDescription,
-  icons: config.favIcon,
+  icons: {
+    icon: config.favIcon,
+    shortcut: config.favIcon,
+    apple: config.favIcon,
+  },
   themeColor: config.themeColor
 };
 
