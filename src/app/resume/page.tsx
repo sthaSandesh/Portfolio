@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Navbar } from '@/components/Navbar';
 import { AvatarURL, Education, fullName, githubName, itemVariant, WorkExp } from '@/utils/config';
@@ -30,7 +31,7 @@ export default function Resume() {
           </div>
 
           {/* Avatar Section */}
-          {/* <motion.div 
+          <motion.div 
             variants={itemVariant} 
             className="w-full lg:w-1/3 mb-8 lg:mb-0 flex justify-center"
           >
@@ -46,7 +47,26 @@ export default function Resume() {
               />
               <div className="absolute -inset-0.5 bg-primary/20 rounded-2xl blur-2xl -z-10"></div>
             </div>
-          </motion.div> */}
+          </motion.div>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="mt-12 flex flex-wrap gap-4 ">
+          <motion.div variants={itemVariant}>
+            <Button link="/projects" variant="primary" rounded>
+              View My Projects
+            </Button>
+          </motion.div>
+          <motion.div variants={itemVariant}>
+            <Button 
+              variant="secondary" 
+              link="/Sandesh_Shrestha_CV.pdf"
+              newtab={true}
+              rounded
+            >
+              Download CV
+            </Button>
+          </motion.div>
         </div>
 
         {/* Experience & Education Section */}
