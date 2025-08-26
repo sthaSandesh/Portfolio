@@ -17,7 +17,7 @@ export default function Resume() {
           <div className="w-full lg:w-2/3">
             <motion.div variants={itemVariant} className="mb-8">
               <h1 className="text-red text-4xl font-bold mb-2">{fullName}</h1>
-              <h2 className="text-red text-xl mb-6">Frontend Developer</h2>
+              <h2 className="text-red text-xl mb-6">FullStack Developer</h2>
               <div className="bg-darkGray/50 backdrop-blur-sm p-6 rounded-xl shadow-xl">
                 <p className="text-red text-lg leading-relaxed mb-4">
                   Hi, I am a student and a self-taught full stack developer from Nepal, active since August of 2023.
